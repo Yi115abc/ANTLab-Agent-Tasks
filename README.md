@@ -33,3 +33,33 @@
 - 提交：把作品推送到自己的 GitHub 仓库，并在收集表登记仓库链接与最终 commit SHA；收集表地址与仓库评审账号见 Q 群公布（详见 进阶/05_提交与报告格式.md 与 进阶/06_收集表填写说明.md）。
 - 本包不含评委参考答案、评测标签、内部开发教程或商业书籍全文。
 - 文件完整性：`基础/文件校验.json` 与 `进阶/文件校验.json` 提供逐文件 SHA256，可自行校验。
+
+---
+
+## 参赛者提交信息
+
+- 所选方向：Agent（文档阅读与信息核验）
+- 最终分支：main
+- 最终 commit SHA：（提交后更新为内容快照的 commit）
+- 完成情况：基础题全部完成——D01–D04 通过；正式题 40 次主请求（32 基线 + 8 改进，R0 改进后 7/8）；多次采样分析见报告
+
+### 运行入口
+
+进入 `基础` 目录执行：
+
+```text
+python starter/runner.py --case D01 --condition E --dry-run --config config.local.json   # 试跑（不花钱）
+python starter/runner.py --case D01 --condition E --paid --config config.local.json       # 真实调用
+```
+
+`config.local.json` 由 `config.example.json` 复制后填写个人 API 信息，含密钥不入库（.gitignore 已排除）。
+
+### 提交物清单
+
+| 路径 | 说明 |
+|---|---|
+| 基础/starter/student.py | 答卷实现：prepare_messages（统一提示词）+ improve（v6 冻结版：规则前置 + 类型自适应） |
+| 基础/versions/ | 改进版本备份：student_baseline_v1 + student_improved_v1~v6 |
+| 基础/results/results.csv | 逐例结果表（142 条：40 次主请求 + 探索轮，失败与重试独立成行） |
+| 基础/results/scoring/ | 判分与核验脚本（check_baseline / inspect_run / compare_improved / verify_r0 / show_cond） |
+| 基础/reports/ | 基础题实验报告 + 决策记录与 AI 申报 |
