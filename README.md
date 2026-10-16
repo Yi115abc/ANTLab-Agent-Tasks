@@ -73,4 +73,4 @@ python starter/runner.py --case D01 --condition E --paid --config config.local.j
 | 进阶/challenge_b/run_variants.py | 等价变体（版本切换/标识重映射/词序）与自构造边界运行脚本 |
 | 进阶/challenge_b/runs/ | baseline.json（原样机基线）、fixed.json（修复后）、variants.json（变体+边界） |
 | 进阶/challenge_b/compare.html | 修复前后行为对比页面（区分已核验/未核验） |
-| 桌面《ANTLab考核-进阶题B实验报告.docx》 | 故障记录、两候选原因与预测、最小修复、回归/变体/边界、决策记录与 AI 申报 |
+| 易欣妤-25012100026-报告.pdf（根目录） | 整合报告：完成概览、基础题八题结果、进阶 B 故障记录与两候选原因与预测、最小修复、回归/变体/边界、决策记录与 AI 申报 |
