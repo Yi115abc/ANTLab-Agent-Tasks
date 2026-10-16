@@ -38,10 +38,10 @@
 
 ## 参赛者提交信息
 
-- 所选方向：Agent（文档阅读与信息核验）
+- 所选方向：Agent（文档阅读与信息核验）；进阶题选 B（系统失效诊断）
 - 最终分支：main
-- 最终 commit SHA：e4ec28c44d24deb241a54836dbff2fe06cd1f44d（基础题成果快照）
-- 完成情况：基础题全部完成——D01–D04 通过；正式题 40 次主请求（32 基线 + 8 改进，R0 改进后 7/8）；多次采样分析见报告
+- 最终 commit SHA：eb054d2（进阶题 B 成果快照）；基础题快照 e4ec28c
+- 完成情况：基础题全部完成——D01–D04 通过；正式题 40 次主请求（32 基线 + 8 改进，R0 改进后 7/8）；进阶题 B 完成——定位并修复 R02 缓存污染（换快照返回旧结论），回归/变体/边界通过，详见进阶报告
 
 ### 运行入口
 
@@ -63,3 +63,13 @@ python starter/runner.py --case D01 --condition E --paid --config config.local.j
 | 基础/results/results.csv | 逐例结果表（142 条：40 次主请求 + 探索轮，失败与重试独立成行） |
 | 基础/results/scoring/ | 判分与核验脚本（check_baseline / inspect_run / compare_improved / verify_r0 / show_cond） |
 | 基础/reports/ | 基础题实验报告 + 决策记录与 AI 申报 |
+
+### 进阶题 B 提交物清单
+
+| 路径 | 说明 |
+|---|---|
+| 进阶/challenge_b/my_engine.py | 修复版 Engine（缓存键含 doc_ids/snapshot/k），原 challenge.py 未动 |
+| 进阶/challenge_b/run_variants.py | 等价变体（版本切换/标识重映射/词序）与自构造边界运行脚本 |
+| 进阶/challenge_b/runs/ | baseline.json（原样机基线）、fixed.json（修复后）、variants.json（变体+边界） |
+| 进阶/challenge_b/compare.html | 修复前后行为对比页面（区分已核验/未核验） |
+| 桌面《ANTLab考核-进阶题B实验报告.docx》 | 故障记录、两候选原因与预测、最小修复、回归/变体/边界、决策记录与 AI 申报 |
