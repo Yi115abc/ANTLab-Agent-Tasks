@@ -1,0 +1,300 @@
+{
+  "V1_version_switch": [
+    {
+      "case": "V1a_alpha_v2",
+      "output": {
+        "answer": "请求超时阈值为12秒。",
+        "citations": [
+          "b02"
+        ],
+        "evidence": [
+          {
+            "id": "b02",
+            "doc_id": "alpha",
+            "snapshot": "v2",
+            "page": 1,
+            "text": "实验A timeout request threshold 改为12秒；此版本未测量GPU执行取消。",
+            "tags": [
+              "timeout",
+              "request",
+              "threshold",
+              "12"
+            ]
+          }
+        ],
+        "locator_status": "valid",
+        "support_status": "supported",
+        "judgment_source": "rule",
+        "status": "ok",
+        "request_id": "94b5d99a-1a6a-47f2-a289-90cccf0f18b1",
+        "request": {
+          "query": "timeout request threshold",
+          "doc_ids": [
+            "alpha"
+          ],
+          "snapshot": "v2",
+          "k": 2
+        },
+        "cache_hit": false,
+        "elapsed_ms": 0.06890000003068053,
+        "run_kind": "offline_replay"
+      }
+    },
+    {
+      "case": "V1b_alpha_v2_repeat",
+      "output": {
+        "answer": "请求超时阈值为12秒。",
+        "citations": [
+          "b02"
+        ],
+        "evidence": [
+          {
+            "id": "b02",
+            "doc_id": "alpha",
+            "snapshot": "v2",
+            "page": 1,
+            "text": "实验A timeout request threshold 改为12秒；此版本未测量GPU执行取消。",
+            "tags": [
+              "timeout",
+              "request",
+              "threshold",
+              "12"
+            ]
+          }
+        ],
+        "locator_status": "valid",
+        "support_status": "supported",
+        "judgment_source": "rule",
+        "status": "ok",
+        "request_id": "cf7b9f55-34a0-43ab-92fd-40e7b80aad78",
+        "request": {
+          "query": "timeout request threshold",
+          "doc_ids": [
+            "alpha"
+          ],
+          "snapshot": "v2",
+          "k": 2
+        },
+        "cache_hit": true,
+        "elapsed_ms": 0.022300000011910015,
+        "run_kind": "offline_replay"
+      }
+    },
+    {
+      "case": "V1c_alpha_v1_after_v2",
+      "output": {
+        "answer": "请求超时阈值为30秒。",
+        "citations": [
+          "b01"
+        ],
+        "evidence": [
+          {
+            "id": "b01",
+            "doc_id": "alpha",
+            "snapshot": "v1",
+            "page": 1,
+            "text": "实验A timeout request threshold 为30秒。此值仅适用于第一版请求客户端。",
+            "tags": [
+              "timeout",
+              "request",
+              "threshold",
+              "30"
+            ]
+          }
+        ],
+        "locator_status": "valid",
+        "support_status": "supported",
+        "judgment_source": "rule",
+        "status": "ok",
+        "request_id": "de7b78e0-2b9d-4122-92eb-49b73dcd667a",
+        "request": {
+          "query": "timeout request threshold",
+          "doc_ids": [
+            "alpha"
+          ],
+          "snapshot": "v1",
+          "k": 2
+        },
+        "cache_hit": false,
+        "elapsed_ms": 0.02419999998437561,
+        "run_kind": "offline_replay"
+      }
+    }
+  ],
+  "V2_id_remap": [
+    {
+      "case": "V2a_docA_v1",
+      "output": {
+        "answer": "请求超时阈值为30秒。",
+        "citations": [
+          "b01"
+        ],
+        "evidence": [
+          {
+            "id": "b01",
+            "doc_id": "docA",
+            "snapshot": "v1",
+            "page": 1,
+            "text": "实验A timeout request threshold 为30秒。此值仅适用于第一版请求客户端。",
+            "tags": [
+              "timeout",
+              "request",
+              "threshold",
+              "30"
+            ]
+          }
+        ],
+        "locator_status": "valid",
+        "support_status": "supported",
+        "judgment_source": "rule",
+        "status": "ok",
+        "request_id": "78ad4550-e6ae-455f-8588-66b1e9b03aaf",
+        "request": {
+          "query": "timeout request threshold",
+          "doc_ids": [
+            "docA"
+          ],
+          "snapshot": "v1",
+          "k": 2
+        },
+        "cache_hit": false,
+        "elapsed_ms": 0.02819999997427658,
+        "run_kind": "offline_replay"
+      }
+    },
+    {
+      "case": "V2b_docA_v2",
+      "output": {
+        "answer": "请求超时阈值为12秒。",
+        "citations": [
+          "b02"
+        ],
+        "evidence": [
+          {
+            "id": "b02",
+            "doc_id": "docA",
+            "snapshot": "v2",
+            "page": 1,
+            "text": "实验A timeout request threshold 改为12秒；此版本未测量GPU执行取消。",
+            "tags": [
+              "timeout",
+              "request",
+              "threshold",
+              "12"
+            ]
+          }
+        ],
+        "locator_status": "valid",
+        "support_status": "supported",
+        "judgment_source": "rule",
+        "status": "ok",
+        "request_id": "cae5f05a-b232-4dc3-9f28-7996c019ddff",
+        "request": {
+          "query": "timeout request threshold",
+          "doc_ids": [
+            "docA"
+          ],
+          "snapshot": "v2",
+          "k": 2
+        },
+        "cache_hit": false,
+        "elapsed_ms": 0.017399999990175274,
+        "run_kind": "offline_replay"
+      }
+    }
+  ],
+  "V3_word_order": [
+    {
+      "case": "V3a_permuted_order",
+      "output": {
+        "answer": "请求超时阈值为12秒。",
+        "citations": [
+          "b02"
+        ],
+        "evidence": [
+          {
+            "id": "b02",
+            "doc_id": "alpha",
+            "snapshot": "v2",
+            "page": 1,
+            "text": "实验A timeout request threshold 改为12秒；此版本未测量GPU执行取消。",
+            "tags": [
+              "timeout",
+              "request",
+              "threshold",
+              "12"
+            ]
+          }
+        ],
+        "locator_status": "valid",
+        "support_status": "supported",
+        "judgment_source": "rule",
+        "status": "ok",
+        "request_id": "1733c969-60cd-4bae-850d-f4ca4de516dd",
+        "request": {
+          "query": "threshold timeout request",
+          "doc_ids": [
+            "alpha"
+          ],
+          "snapshot": "v2",
+          "k": 2
+        },
+        "cache_hit": false,
+        "elapsed_ms": 0.016200000004573667,
+        "run_kind": "offline_replay"
+      }
+    }
+  ],
+  "edge_unresolved": [
+    {
+      "case": "E1_unknown_snapshot",
+      "output": {
+        "answer": "未知快照。",
+        "citations": [],
+        "evidence": [],
+        "locator_status": "invalid",
+        "support_status": "not_checked",
+        "judgment_source": "rule",
+        "status": "ok",
+        "request_id": "1f01628c-e0fe-4d5b-b5d1-7906acd431b2",
+        "request": {
+          "query": "timeout request threshold",
+          "doc_ids": [
+            "alpha"
+          ],
+          "snapshot": "v9",
+          "k": 2
+        },
+        "cache_hit": false,
+        "elapsed_ms": 0.012599999990925426,
+        "run_kind": "offline_replay"
+      }
+    },
+    {
+      "case": "E2_unknown_doc",
+      "output": {
+        "answer": "这个文档存在。",
+        "citations": [
+          "b05"
+        ],
+        "evidence": [],
+        "locator_status": "invalid",
+        "support_status": "not_checked",
+        "judgment_source": "rule",
+        "status": "ok",
+        "request_id": "8da58603-b616-4cd6-ac27-6f579e92edcf",
+        "request": {
+          "query": "metadata",
+          "doc_ids": [
+            "missing"
+          ],
+          "snapshot": "v1",
+          "k": 2
+        },
+        "cache_hit": false,
+        "elapsed_ms": 0.012900000001536682,
+        "run_kind": "offline_replay"
+      }
+    }
+  ]
+}
